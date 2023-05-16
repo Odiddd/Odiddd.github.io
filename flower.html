@@ -9,10 +9,14 @@
     <title>flowers</title>
 </head>
 <body class="container">
-  <div class="audio">
-    <audio controls autoplay>
-        <source src="music/lemonade.mp3" type="audio/mpeg">
-    </audio>
+  <script>
+    function setHalfVolume(){
+       var myAudio = document.getElementById("audio");
+       myAudio.volume = 0.2;
+                         }
+   </script>
+   <audio id="audio" autoplay controls><source src="./music/lemonade.mp3" type="audio/mp3"></audio>
+  </audio>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
